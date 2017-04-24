@@ -27,21 +27,158 @@ public class GuiProjecte extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
+        buttonGroup2 = new javax.swing.ButtonGroup();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        taula = new javax.swing.JTable();
+        nom = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        nomresultat = new javax.swing.JTextPane();
+        pes = new javax.swing.JLabel();
+        volta = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        resultatPes = new javax.swing.JTextPane();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        resultatMinut = new javax.swing.JTextPane();
+        accidenSi = new javax.swing.JRadioButton();
+        accidenNo = new javax.swing.JRadioButton();
+        acciden = new javax.swing.JLabel();
+        inserir = new javax.swing.JButton();
+        modificar = new javax.swing.JButton();
+        borrar = new javax.swing.JButton();
+        sortir = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        taula.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Nom", "Pes", "Acciden_pilot", "Minut_per_volta"
+            }
+        ));
+        jScrollPane1.setViewportView(taula);
+
+        nom.setText("Nom:");
+
+        jScrollPane2.setViewportView(nomresultat);
+
+        pes.setText("Pes:");
+
+        volta.setText("Minut Volta:");
+
+        jScrollPane3.setViewportView(resultatPes);
+
+        jScrollPane4.setViewportView(resultatMinut);
+
+        accidenSi.setText("Si");
+        accidenSi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accidenSiActionPerformed(evt);
+            }
+        });
+
+        accidenNo.setText("No");
+
+        acciden.setText("Acciden:");
+
+        inserir.setText("Inserir");
+
+        modificar.setText("Modificar");
+
+        borrar.setText("Borrar");
+
+        sortir.setText("Sortir");
+
+        jLabel5.setText("Pilots de formula 1");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 384, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                            .addGroup(layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(inserir)
+                                .addGap(44, 44, 44)
+                                .addComponent(modificar)
+                                .addGap(34, 34, 34)
+                                .addComponent(borrar)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(sortir)
+                                .addGap(23, 23, 23)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(volta)
+                            .addComponent(nom)
+                            .addComponent(acciden)
+                            .addComponent(pes))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(accidenSi, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(accidenNo))
+                            .addComponent(jScrollPane2)
+                            .addComponent(jScrollPane3)
+                            .addComponent(jScrollPane4)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(41, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(64, 64, 64)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(nom))
+                        .addGap(32, 32, 32)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(pes))
+                        .addGap(30, 30, 30)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(volta)
+                            .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel5)
+                        .addGap(18, 18, 18)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(acciden)
+                    .addComponent(accidenSi)
+                    .addComponent(accidenNo))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(inserir)
+                    .addComponent(modificar)
+                    .addComponent(borrar)
+                    .addComponent(sortir))
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void accidenSiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accidenSiActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_accidenSiActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +216,26 @@ public class GuiProjecte extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel acciden;
+    private javax.swing.JRadioButton accidenNo;
+    private javax.swing.JRadioButton accidenSi;
+    private javax.swing.JButton borrar;
+    private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.ButtonGroup buttonGroup2;
+    private javax.swing.JButton inserir;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JButton modificar;
+    private javax.swing.JLabel nom;
+    private javax.swing.JTextPane nomresultat;
+    private javax.swing.JLabel pes;
+    private javax.swing.JTextPane resultatMinut;
+    private javax.swing.JTextPane resultatPes;
+    private javax.swing.JButton sortir;
+    private javax.swing.JTable taula;
+    private javax.swing.JLabel volta;
     // End of variables declaration//GEN-END:variables
 }
